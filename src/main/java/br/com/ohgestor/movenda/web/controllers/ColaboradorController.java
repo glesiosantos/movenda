@@ -13,4 +13,9 @@ public class ColaboradorController {
         return "colaboradores/index";
     }
 
+    @GetMapping("/cadastro")
+    public String cadastrarColaboradores() {
+        return "colaboradores/form";
+    }
+
 }
