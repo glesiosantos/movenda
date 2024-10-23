@@ -5,11 +5,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping
-public class DashboardController {
+@RequestMapping("/colaboradores")
+public class ColaboradorController {
 
     @GetMapping("/")
-    public String dashboard() {
-        return "dashboard/index";
+    public String carregarColaboradores() {
+        return "colaboradores/index";
     }
+
 }
